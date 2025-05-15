@@ -5,13 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run copy",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "copy": "xcopy dist extension /s /e"
   },
   "dependencies": {
+    "chart.js": "^4.4.8",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.9.4",
+    "quill": "^2.0.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router": "^7.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

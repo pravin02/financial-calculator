@@ -1,19 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Route, Routes } from 'react-router'
+import Home from './components/home/Home'
+import About from './components/about/About'
+import FinCalMenu from './menu/FinCalMenu';
+import EquityLinkedSavingScheme from './menu/mutualfunds/ells';
+import SystematicInvestmentPlan from './menu/mutualfunds/SystematicInvestmentPlan';
+import SystematicWithdrawalPlan from './menu/mutualfunds/SystematicWithdrawalPlan';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>       
-      </div>      
+      <div className='sidebar'>
+        <FinCalMenu />
+      </div>
+      <div className='content'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/mf/ells" element={<EquityLinkedSavingScheme />} />
+          <Route path="/mf/sip" element={<SystematicInvestmentPlan />} />
+          <Route path="/mf/swp" element={<SystematicWithdrawalPlan />} />
+        </Routes>
+      </div>
     </>
   )
 }

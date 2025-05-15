@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "India FinCalculator",
+    "description": "The calculators for indias for financial instruments and investmens calculations",
+    "version": "1.0.0",
+    "permissions": [
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "India FinCalculator"
+    }
+}
