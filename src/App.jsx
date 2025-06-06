@@ -3,9 +3,11 @@ import { Route, Routes } from 'react-router'
 import Home from './components/home/Home'
 import About from './components/about/About'
 import FinCalMenu from './menu/FinCalMenu';
-import EquityLinkedSavingScheme from './menu/mutualfunds/ells';
-import SystematicInvestmentPlan from './menu/mutualfunds/SystematicInvestmentPlan';
-import SystematicWithdrawalPlan from './menu/mutualfunds/SystematicWithdrawalPlan';
+
+
+import SystematicInvestmentPlan from './mutualfunds/SystematicInvestmentPlan';
+import SystematicWithdrawalPlan from './mutualfunds/SystematicWithdrawalPlan';
+import EquityLinkedSavingScheme from './mutualfunds/ells';
 
 function App() {
 
