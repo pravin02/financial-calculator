@@ -10,10 +10,7 @@
     "preview": "vite preview",
     "copy": "xcopy dist extension /s /e"
   },
-  "dependencies": {
-    "chart.js": "^4.4.8",
-    "primeicons": "^7.0.0",
-    "primereact": "^10.9.4",
+  "dependencies": {    
     "quill": "^2.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
