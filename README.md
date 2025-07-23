@@ -11,4 +11,4 @@
 
 ### Below is very first glism of the application
 
-![alt](/screenshots/Initial_design.PNG)
+![alt](/screenshots/new_design.PNG)
